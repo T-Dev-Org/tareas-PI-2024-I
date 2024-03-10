@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este es el código final de la **sesion 3**.
+Este es el desarrollo de la tarea de la **sesion 3**.
 La tabla de contenido de esta sesión es:
 
 - Transformaciones
