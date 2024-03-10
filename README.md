@@ -16,11 +16,11 @@ La rama master no contiene más que este archivo README.md para funcionar como g
 
 ## Códigos de Clase
 
-Todos los ejemplos de código demostrados durante las clases se almacenarán en ramas con prefijo: <por definir...>.
+Todos los ejemplos de código demostrados durante las clases se almacenarán en ramas con prefijo: **sesion-**.
 
 ## Tareas
 
-Las tareas asignadas por el instructor se almacenarán en ramas con prefijo: <por definir...>.
+Las tareas asignadas por el instructor se almacenarán en ramas con prefijo: **tarea-sesion-**.
 
 ## Contacto
 
