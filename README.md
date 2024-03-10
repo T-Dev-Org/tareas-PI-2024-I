@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este es el código fina de la **sesion 2**.
+Este es el código final de la **sesion 2**.
 La tabla de contenido de esta sesión es:
 
 - React
