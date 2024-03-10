@@ -7,6 +7,7 @@ Este repositorio está destinado a almacenar los códigos de clase y las tareas 
 - [Acerca de](#acerca-de)
 - [Códigos de Clase](#códigos-de-clase)
 - [Tareas](#tareas)
+- [Contacto](#contacto)
 
 ## Acerca de
 
@@ -20,7 +21,7 @@ Todos los ejemplos de código demostrados durante las clases se almacenarán en 
 
 Las tareas asignadas por el instructor se almacenarán en ramas con prefijo: <por definir...>.
 
-**Contacto:**
+## Contacto
 
 Juan David Loaiza Santiago - 2177570  
 juan.loaiza.santiago@correounivalle.edu.co
