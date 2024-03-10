@@ -22,5 +22,5 @@ Las tareas asignadas por el instructor se almacenarán en ramas con prefijo: <po
 
 **Contacto:**
 
-Juan David Loaiza Santiago (JuanLoaiza007)  
+Juan David Loaiza Santiago - 2177570  
 juan.loaiza.santiago@correounivalle.edu.co
