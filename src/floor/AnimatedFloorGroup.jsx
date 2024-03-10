@@ -1,6 +1,13 @@
-import React from "react";
+import { useFrame } from "@react-three/fiber";
+import React, { useRef } from "react";
 
 export default function FloorGroup() {
+  const groupRef = useRef(null);
+
+  useFrame(({ clock }) => {
+    groupRef.current.position.y = Math.sin(clock.getElapsedTime());
+  });
+
   const floorsProperties = [
     { height: 0, material: <meshStandardMaterial color="purple" /> },
     { height: 5, material: <meshLambertMaterial color="purple" /> },
@@ -13,21 +20,18 @@ export default function FloorGroup() {
 
   const floors = [];
 
-  for (let i = 0; i < floorsProperties.length; i++) {
-
-    const floor = floorsProperties[i];
-
+  floorsProperties.forEach((currentFloor) => {
     floors.push(
-      <mesh key={i} position={[0, floor.height, 0]}>
+      <mesh position={[0, currentFloor.height, 0]}>
         <boxGeometry args={[100, 1, 10]} />
-        {floor.material}
+        {currentFloor.material}
       </mesh>
     );
-  }
+  });
 
   return (
-    <>
+    <group ref={groupRef}>
       {floors}
-    </>
+    </group>
   );
 };
