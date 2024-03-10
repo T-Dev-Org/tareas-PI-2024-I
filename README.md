@@ -12,6 +12,7 @@ Este repositorio está destinado a almacenar los códigos de clase y las tareas 
 ## Acerca de
 
 Este repositorio sirve como un lugar centralizado para almacenar todos los códigos relacionados con la asignatura de Proyecto Integrador I incluyendo códigos de clase y tareas proporcionadas por el profesor Fabián.
+La rama master no contiene más que este archivo README.md para funcionar como guia del repositorio, para explorar los codigos de clase y las tareas se debe navegar entre las ramas.
 
 ## Códigos de Clase
 
