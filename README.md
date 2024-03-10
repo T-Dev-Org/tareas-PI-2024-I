@@ -1,26 +1,15 @@
 # Repositorio Proyecto Integrador I
 
-Este repositorio está destinado a almacenar los códigos de clase y las tareas para la asignatura de Proyecto Integrador I.
+## Resumen
 
-## Contenido
+Este es el código fina de la **sesion 2**.
+La tabla de contenido de esta sesión es:
 
-- [Acerca de](#acerca-de)
-- [Códigos de Clase](#códigos-de-clase)
-- [Tareas](#tareas)
-- [Contacto](#contacto)
-
-## Acerca de
-
-Este repositorio sirve como un lugar centralizado para almacenar todos los códigos relacionados con la asignatura de Proyecto Integrador I incluyendo códigos de clase y tareas proporcionadas por el profesor Fabián.
-La rama master no contiene más que este archivo README.md para funcionar como guia del repositorio, para explorar los codigos de clase y las tareas se debe navegar entre las ramas.
-
-## Códigos de Clase
-
-Todos los ejemplos de código demostrados durante las clases se almacenarán en ramas con prefijo: **sesion-**.
-
-## Tareas
-
-Las tareas asignadas por el instructor se almacenarán en ramas con prefijo: **tarea-sesion-**.
+- React
+- React Three Fiber
+- Drei
+- Git
+- Vercel
 
 ## Contacto
 
