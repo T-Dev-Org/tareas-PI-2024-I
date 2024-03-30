@@ -1,5 +1,5 @@
 import { useGLTF, useTexture } from "@react-three/drei"
-import { RepeatWrapping } from "three";
+import { Color, RepeatWrapping } from "three";
 
 export default function World(props) {
     const { nodes, materials } = useGLTF("/assets/models/world/WorldSquidGames.glb")
@@ -29,7 +29,14 @@ export default function World(props) {
             <group>
                 <mesh geometry={nodes.Walls.geometry} material={materials.Material} />
                 <mesh geometry={nodes.Floor.geometry}>
-                    <meshStandardMaterial {...propsTexture}/>
+                    <meshStandardMaterial {...propsTexture} />
+                </mesh>
+                <mesh geometry={nodes.WoodenFence.geometry}>
+                    <meshStandardMaterial
+                        color={"#FF8E07"}
+                        metalness={0}
+                        roughness={0.5}
+                    />
                 </mesh>
             </group>
         </group>
