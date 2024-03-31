@@ -27,7 +27,7 @@ export default function World(props) {
     return (
         <group {...props} dispose={null}>
             <group>
-                <mesh geometry={nodes.Walls.geometry} material={materials.Material} />
+                {/* <mesh geometry={nodes.Walls.geometry} material={materials.Material} /> */}
                 <mesh receiveShadow={true} geometry={nodes.Floor.geometry}>
                     <meshStandardMaterial {...propsTexture} />
                 </mesh>
