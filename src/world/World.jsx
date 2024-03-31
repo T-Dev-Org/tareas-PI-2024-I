@@ -29,7 +29,7 @@ export default function World(props) {
             <group>
                 {/* <mesh geometry={nodes.Walls.geometry} material={materials.Material} /> */}
                 <mesh receiveShadow={true} geometry={nodes.Floor.geometry}>
-                    <meshStandardMaterial {...propsTexture} />
+                    <meshStandardMaterial {...propsTexture} opacity={1} transparent={false} />
                 </mesh>
                 <mesh castShadow={true} geometry={nodes.WoodenFence.geometry}>
                     <meshStandardMaterial
