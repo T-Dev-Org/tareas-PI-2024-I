@@ -38,6 +38,8 @@ export default function World(props) {
                         roughness={0.5}
                     />
                 </mesh>
+                <mesh geometry={nodes.Tree_1.geometry} material={materials.leaves_material} />
+                <mesh geometry={nodes.Tree_2.geometry} material={materials.root_material} />
             </group>
         </group>
     );
