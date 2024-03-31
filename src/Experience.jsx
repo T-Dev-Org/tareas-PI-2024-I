@@ -3,16 +3,21 @@ import World from "./world/World";
 import Lights from "./lights/lights";
 import Environments from "./environments/Environments";
 import { Perf } from "r3f-perf";
+import { Suspense } from "react";
 
 const Experience = () => {
     return (
         <>
             <Perf position="top-left" />
-            <BakeShadows />
-            <Environments />
-            <Lights />
             <OrbitControls makeDefault />
-            <World />
+            <BakeShadows />
+
+            <Suspense fallback={null}>
+                <Environments />
+                <Lights />
+                <World />
+            </Suspense>
+
         </>
     )
 }
