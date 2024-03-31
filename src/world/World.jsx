@@ -28,18 +28,18 @@ export default function World(props) {
         <group {...props} dispose={null}>
             <group>
                 <mesh geometry={nodes.Walls.geometry} material={materials.Material} />
-                <mesh geometry={nodes.Floor.geometry}>
+                <mesh receiveShadow={true} geometry={nodes.Floor.geometry}>
                     <meshStandardMaterial {...propsTexture} />
                 </mesh>
-                <mesh geometry={nodes.WoodenFence.geometry}>
+                <mesh castShadow={true} geometry={nodes.WoodenFence.geometry}>
                     <meshStandardMaterial
                         color={"#FF8E07"}
                         metalness={0}
                         roughness={0.5}
                     />
                 </mesh>
-                <mesh geometry={nodes.Tree_1.geometry} material={materials.leaves_material} />
-                <mesh geometry={nodes.Tree_2.geometry} material={materials.root_material} />
+                <mesh castShadow={true} geometry={nodes.Tree_1.geometry} material={materials.leaves_material} />
+                <mesh castShadow={true} geometry={nodes.Tree_2.geometry} material={materials.root_material} />
             </group>
         </group>
     );
