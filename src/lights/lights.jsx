@@ -6,7 +6,7 @@ const Lights = () => {
     NO es capaz de generar sombras */}
     <ambientLight
       // color={new Color("#8F00FF")}
-      intensity={0.2}
+      intensity={0.1}
     />
     {/* Luz direccional es como el sol, como si estuviera re lejos y produjera rayos paralelos
     Produce sombras  */}
@@ -14,7 +14,7 @@ const Lights = () => {
       castShadow={true}
       color={new Color("#FFF700")}
       position={[2, 10, 0]}
-      intensity={0.5}
+      intensity={1}
     />
 
     {/* Point light es un punto que se lanza a todas las direcciones, es mas costosa porque en cada frame se calcula 
@@ -37,7 +37,7 @@ const Lights = () => {
       position={[0, 2, 0]}
       skyColor={new Color(0xFFFFFF)}
       groundColor={new Color(0x8F00FF)}
-      intensity={0.2}
+      intensity={1}
     />
   </>
 }
