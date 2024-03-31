@@ -16,11 +16,12 @@ const Lights = () => {
       positionZSL: { value: 5, min: 0, max: 50, step: 1 },
       positionXSL: { value: 0, min: -50, max: 50, step: 1 },
       positionYSL: { value: 0, min: -50, max: 50, step: 1 },
+      castShadowSL: true
     }
   }, [])
 
   // Obtener los parametros que se estan ajustando
-  const { intensitySL, colorSL, positionZSL, positionXSL, positionYSL } = useControls("Spot Light", optionsSpotLight)
+  const { intensitySL, colorSL, positionZSL, positionXSL, positionYSL, castShadowSL } = useControls("Spot Light", optionsSpotLight)
 
 
   return <>
@@ -48,6 +49,7 @@ const Lights = () => {
     /> */}
     {/* Spotlight es como la luz de los carros, si puede generar sombras*/}
     <spotLight
+      castShadow={castShadowSL}
       ref={spotLightRef}
       position={[positionYSL, positionZSL, positionXSL]}
       angle={Math.PI / 3}

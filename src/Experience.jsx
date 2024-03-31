@@ -1,4 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
+import { BakeShadows, OrbitControls } from "@react-three/drei";
 import World from "./world/World";
 import Lights from "./lights/lights";
 import Environments from "./environments/Environments";
@@ -8,6 +8,7 @@ const Experience = () => {
     return (
         <>
             <Perf position="top-left" />
+            <BakeShadows />
             <Environments />
             <Lights />
             <OrbitControls makeDefault />
