@@ -1,17 +1,21 @@
+import { useHelper } from "@react-three/drei";
 import { useControls } from "leva";
-import { useMemo } from "react";
-import { Color } from "three";
+import { useMemo, useRef } from "react";
+import { Color, SpotLightHelper } from "three";
 
 const Lights = () => {
+  // Las lineas guias de nuestros objetos
+  const spotLightRef = useRef(null)
+  useHelper(spotLightRef, SpotLightHelper)
 
   // Las opciones que queremos configurar en Leva
   const optionsSpotLight = useMemo(() => {
     return {
       intensitySL: { value: 100, min: 0, max: 100, step: 1 },
       colorSL: { value: "#df00ff" },
-      positionZSL: { value: 8, min: 0, max: 100, step: 1 },
-      positionXSL: { value: 10, min: -100, max: 100, step: 1 },
-      positionYSL: { value: 5, min: -100, max: 100, step: 1 },
+      positionZSL: { value: 5, min: 0, max: 50, step: 1 },
+      positionXSL: { value: 0, min: -50, max: 50, step: 1 },
+      positionYSL: { value: 0, min: -50, max: 50, step: 1 },
     }
   }, [])
 
@@ -44,6 +48,7 @@ const Lights = () => {
     /> */}
     {/* Spotlight es como la luz de los carros, si puede generar sombras*/}
     <spotLight
+      ref={spotLightRef}
       position={[positionYSL, positionZSL, positionXSL]}
       angle={Math.PI / 3}
       color={colorSL}
