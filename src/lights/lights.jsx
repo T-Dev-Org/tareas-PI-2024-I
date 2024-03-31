@@ -1,6 +1,24 @@
+import { useControls } from "leva";
+import { useMemo } from "react";
 import { Color } from "three";
 
 const Lights = () => {
+
+  // Las opciones que queremos configurar en Leva
+  const optionsSpotLight = useMemo(() => {
+    return {
+      intensitySL: { value: 100, min: 0, max: 100, step: 1 },
+      colorSL: { value: "#df00ff" },
+      positionZSL: { value: 8, min: 0, max: 100, step: 1 },
+      positionXSL: { value: 10, min: -100, max: 100, step: 1 },
+      positionYSL: { value: 5, min: -100, max: 100, step: 1 },
+    }
+  }, [])
+
+  // Obtener los parametros que se estan ajustando
+  const { intensitySL, colorSL, positionZSL, positionXSL, positionYSL } = useControls("Spot Light", optionsSpotLight)
+
+
   return <>
     {/* Luz ambiente, no es una luz explicita así que 
     NO es capaz de generar sombras */}
@@ -25,12 +43,12 @@ const Lights = () => {
       intensity={10}
     /> */}
     {/* Spotlight es como la luz de los carros, si puede generar sombras*/}
-    {/* <spotLight
-      position={[0, 3, 0]}
+    <spotLight
+      position={[positionYSL, positionZSL, positionXSL]}
       angle={Math.PI / 3}
-      color={"yellow"}
-      intensity={10}
-    /> */}
+      color={colorSL}
+      intensity={intensitySL}
+    />
     {/* Es una luz que se pone directamente de los objetos, 
     NO produce sombras */}
     <hemisphereLight
