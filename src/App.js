@@ -5,7 +5,7 @@ import imagenes from './images/imagenes'
 function App() {
   const [appState, setAppState] = useState({
     "appName": "Tareas de Proyecto Integrador 2024-1",
-    "appVersion": "1.0"
+    "appVersion": "1.1"
   });
 
   return (<>
